@@ -12,3 +12,5 @@
 hs_err_pid*
 /StaffAssociation/nbproject/private/
 /StaffAssociation/build/
+!/StaffAssociation/test/tests/StaffAssociationTest.java
+!/StaffAssociation/src/model/Role.java
