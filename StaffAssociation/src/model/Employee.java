@@ -4,7 +4,7 @@ public class Employee extends Member {
 	private int empCode;
 	private String familyName;
 	private String email;
-	private String role;
+	private Role role;
 
 	public String getFamilyName() {
 		return this.familyName;
@@ -18,11 +18,11 @@ public class Employee extends Member {
 		this.email = email;
 	}
 
-	public String getRole() {
+	public Role getRole() {
 		return this.role;
 	}
 
-	public void setRole(String role) {
+	public void setRole(Role role) {
 		this.role = role;
 	}
 
@@ -32,10 +32,11 @@ public class Employee extends Member {
 	 * @param email
 	 * @param role
 	 */
-	public Employee(String firstName, String familyName, String email, String role) {
-		// TODO - implement Employee.Employee
-            super(firstName);
-		throw new UnsupportedOperationException();
+	public Employee(String firstName, String familyName, String email, Role role) {
+        super(firstName);
+		this.familyName = familyName;
+        this.email = email;
+        this.role = role;
 	}
 
 	/**
